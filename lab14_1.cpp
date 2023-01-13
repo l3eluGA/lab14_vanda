@@ -19,10 +19,10 @@ int main(){
 }
 void stat(const double A[],int N,double B[])
 {
-    double sum,sum2,sum3,multi=1,max=A[0],min=A[0];
+    double sum1,sum2,sum3,multi=1,max=A[0],min=A[0];
     int i=0;
-    for(i=0;i<N;i++) sum+=A[i];
-    B[0]=sum/N;
+    for(i=0;i<N;i++) sum1+=A[i];
+    B[0]=sum1/N;
     for(i=0;i<N;i++) sum2+=pow(A[i]-B[0],2);
     B[1]=pow((sum2/(N)),0.5);
     for(i=0;i<N;i++) multi*=A[i];
